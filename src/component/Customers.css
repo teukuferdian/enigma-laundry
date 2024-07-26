@@ -1,0 +1,353 @@
+/* Container untuk daftar pelanggan */
+.customer-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Tabel pelanggan */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.customer-table th, .customer-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.customer-table th {
+  background-color: #f4f4f4;
+}
+
+.customer-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tombol umum */
+.customer-button, .customer-edit, .customer-delete {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.customer-button:hover, .customer-edit:hover, .customer-delete:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Tombol Hapus */
+.customer-delete {
+  background-color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  color: #fff;
+}
+
+.customer-delete:hover {
+  background-color: #cc0000;
+}
+
+/* Tombol Edit */
+.customer-edit {
+  background-color: #ffc107;
+  border: 1px solid #ffc107;
+  color: #fff;
+}
+
+.customer-edit:hover {
+  background-color: #e0a800;
+}
+
+/* Tambah pelanggan */
+/* Container untuk daftar pelanggan */
+.customer-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Tabel pelanggan */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.customer-table th, .customer-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.customer-table th {
+  background-color: #f4f4f4;
+}
+
+.customer-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Tombol umum */
+.customer-button, .customer-edit, .customer-delete {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.customer-button:hover, .customer-edit:hover, .customer-delete:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Tombol Hapus */
+.customer-delete {
+  background-color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  color: #fff;
+}
+
+.customer-delete:hover {
+  background-color: #cc0000;
+}
+
+/* Tombol Edit */
+.customer-edit {
+  color: #fff;
+}
+
+.customer-edit:hover {
+  background-color: #e0a800;
+}
+
+/* Tambah pelanggan */
+.add-customer-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.add-customer-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-customer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form-group {
+  margin-bottom: 15px;
+}
+
+.add-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.add-customer-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.add-customer-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-customer-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-customer-button:hover {
+  background-color: #0056b3;
+}
+
+.add-customer-message {
+  color: #d9534f;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* Container untuk edit pelanggan */
+.edit-customer-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.edit-customer-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Formulir edit pelanggan */
+.edit-customer-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.edit-customer-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.edit-customer-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-customer-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-customer-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Container untuk tabel pelanggan */
+.customer-list-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Gaya tabel pelanggan */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Jarak antara tombol tambah dan tabel */
+}
+
+.customer-table th,
+.customer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.customer-table th {
+  background-color: #f2f2f2;
+}
+
+/* Gaya tombol pelanggan */
+.customer-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.customer-button:hover {
+  background-color: #0056b3;
+}
+
+/* Jarak antara tombol edit dan hapus */
+.customer-item button {
+  margin-right: 8px;
+}
+
+/* Gaya tombol edit */
+.customer-edit {
+  background-color: #0056b3;
+}
+
+.customer-edit:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya tombol hapus */
+.customer-delete {
+  background-color: #dc3545;
+}
+
+.customer-delete:hover {
+  background-color: #c82333;
+}
