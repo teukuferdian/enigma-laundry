@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const AddCustomerForm = ({ addCustomer }) => {
+const AddCustomer = ({ addCustomer }) => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [address, setAddress] = useState('');
@@ -31,7 +31,6 @@ const AddCustomerForm = ({ addCustomer }) => {
           'Content-Type': 'application/json'
         }
       });
-
       const newCustomer = response.data.data;
       addCustomer(newCustomer);
       navigate('/customers');
@@ -94,4 +93,4 @@ const AddCustomerForm = ({ addCustomer }) => {
   );
 };
 
-export default AddCustomerForm;
+export default AddCustomer;

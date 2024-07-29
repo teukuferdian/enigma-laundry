@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProductList.css';
 import { useProducts } from './ProductContext';
 
 const ProductList = () => {
-  const { products, setProducts } = useProducts();
-
-  const deleteProduct = (id) => {
-    setProducts(products.filter(product => product.id !== id));
-  };
+  const { products, deleteProduct } = useProducts();
 
   return (
     <div className="product-table-container">

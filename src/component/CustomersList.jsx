@@ -31,7 +31,7 @@ const CustomersList = ({ customers, deleteCustomer, setCustomerToEdit }) => {
               <td>{customer.address}</td>
               <td>
                 <button onClick={() => handleEdit(customer)} className="customer-edit">Edit</button>
-                <button onClick={() => deleteCustomer(customer.email)} className="customer-delete">Hapus</button>
+                <button onClick={() => deleteCustomer(customer.id)} className="customer-delete">Hapus</button>
               </td>
             </tr>
           ))}

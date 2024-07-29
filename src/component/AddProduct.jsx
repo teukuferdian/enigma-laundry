@@ -4,7 +4,6 @@ import axios from 'axios';
 import { useProducts } from './ProductContext';
 import './ProductList.css';
 
-// Membuat instance axios
 const apiClient = axios.create({
   baseURL: 'http://localhost:5173/api/v1',
   headers: {
@@ -12,7 +11,7 @@ const apiClient = axios.create({
   },
 });
 
-const AddProductForm = () => {
+const AddProduct = () => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [type, setType] = useState('');
@@ -26,8 +25,6 @@ const AddProductForm = () => {
 
     try {
       const token = localStorage.getItem('token');
-      console.log('Token:', token); // Cek token
-
       if (!token) {
         setMessage('Anda perlu login terlebih dahulu');
         return;
@@ -47,7 +44,7 @@ const AddProductForm = () => {
       addProduct(newProduct);
       navigate('/product');
     } catch (error) {
-      console.error('Response Error:', error.response ? error.response.data : error.message); // Cek kesalahan
+      console.error(error);
       if (error.response && error.response.status === 404) {
         setMessage('Endpoint tidak ditemukan (404)');
       } else if (error.response && error.response.status === 401) {
@@ -91,4 +88,4 @@ const AddProductForm = () => {
   );
 };
 
-export default AddProductForm;
+export default AddProduct;

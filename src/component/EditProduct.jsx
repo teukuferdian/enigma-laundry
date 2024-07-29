@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useProducts } from './ProductContext';
-import './ProductList.css'; // Pastikan file CSS ini diimpor
+import './ProductList.css';
 
-const EditProductForm = () => {
+const EditProduct = () => {
   const { id } = useParams();
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
@@ -39,8 +39,7 @@ const EditProductForm = () => {
         return;
       }
 
-      const response = await axios.put(`http://localhost:5173/api/v1/products`, {
-        id, // mengirimkan id sebagai bagian dari payload data
+      const response = await axios.put(`http://localhost:5173/api/v1/products/${id}`, {
         name,
         price: parseFloat(price),
         type
@@ -93,4 +92,4 @@ const EditProductForm = () => {
   );
 };
 
-export default EditProductForm;
+export default EditProduct;

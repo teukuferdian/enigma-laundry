@@ -5,14 +5,10 @@ import ProductList from "./ProductList";
 import AddProduct from "./AddProduct";
 import EditProduct from "./EditProduct";
 
-
-
-
 function Product() {
   return (
     <ProductProvider>
       <Routes>
-      
         <Route path="/*" element={<ProductList />} />
         <Route path="/add" element={<AddProduct />} />
         <Route path="/edit/:id" element={<EditProduct />} />
